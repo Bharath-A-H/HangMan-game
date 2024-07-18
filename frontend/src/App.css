@@ -1,0 +1,104 @@
+body {
+  background-image: url("C:\Users\Bharath\Downloads\hangman.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(235, 223, 223, 0.8); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.word {
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 0.1em;
+}
+
+.hint {
+  font-size: 1.2rem;
+  color: #4b4949;
+  margin-bottom: 20px;
+}
+
+.letter {
+  margin: 0 5px;
+  display: inline-block;
+  width: 20px;
+  border-bottom: 2px solid #000;
+  font-size: 1.5rem;
+}
+
+.alphabet {
+  margin: 20px 0;
+}
+
+.alphabet-button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.alphabet-button:hover {
+  background-color: #0056b3;
+}
+
+.alphabet-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #d9534f;
+}
+
+.hangman {
+  margin: 20px 0;
+}
+
+.hangman img {
+  width: 200px;
+}
+
+.play-again-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-again-button:hover {
+  background-color: #218838;
+}
+
+.new-game {
+  margin-top: 20px;
+}
