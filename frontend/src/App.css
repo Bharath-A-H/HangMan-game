@@ -1,5 +1,5 @@
 body {
-  background-image: url("C:\Users\Bharath\Downloads\hangman.jpg");
+  background-image: url("C:\Users\Bharath\Downloads\hang ba.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,31 +8,34 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
+  color: #111; /* Dark font color for better contrast */
 }
 
 .App {
+  /* Slightly opaque white background for better readability */
+  padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
-  background-color: rgba(235, 223, 223, 0.8); 
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Added border radius for a more polished look */
 }
 
 h1 {
-  color: #333;
+  color: #111; /* Dark font color */
   font-size: 2.5rem;
+  margin-left: 60px;
 }
 
 .word {
   font-size: 2rem;
   margin: 20px 0;
   letter-spacing: 0.1em;
+  color: #111; /* Dark font color */
 }
 
 .hint {
   font-size: 1.2rem;
-  color: #4b4949;
+  color: #212020;
   margin-bottom: 20px;
 }
 
@@ -42,6 +45,7 @@ h1 {
   width: 20px;
   border-bottom: 2px solid #000;
   font-size: 1.5rem;
+  color: #111; /* Dark font color */
 }
 
 .alphabet {
@@ -77,10 +81,17 @@ h1 {
 
 .hangman {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hangman img {
   width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  object-fit: contain; /* Ensures the image fits within the circle */
+  background-color: transparent; /* Ensures the image background is transparent */
 }
 
 .play-again-button {
